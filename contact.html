@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    
+</head>
+<body>
+    <title>Contact Seth Dijkstra</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+        background-color: #3d7ea6;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        }
+        .header li{
+            list-style: none;
+            display: inline-block;
+        }
+        .header li a{
+            color: #ffffff;
+            margin: 18px;
+            font-size: 25px;
+            text-decoration: none;
+        }
+        .header li a:hover{
+            color: #ffa5a5;
+        }
+        body {
+            background-color: lightblue;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            line-height: 1.5;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: black;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        input,
+        input,
+        textarea {
+            background-color: white;
+            border: none;
+            border-radius: 4px;
+            box-shadow: none;
+            color: black;
+            font-family: Arial, sans-serif;
+            font-size: 18px;
+            margin-bottom: 10px;
+            padding: 10px;
+            width: 20%;
+            box-sizing: border-box;
+        }
+
+        button {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            background-color: darkblue;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: white;
+            color: black;
+        }
+        body p a {
+            text-decoration: none;
+            color: black;
+        }
+        body p a:hover {
+            text-decoration: underline;
+            color: darkblue;
+        }
+        .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 15px;
+        }
+        .container-contact {
+        justify-content: center;
+        align-items: center;
+        }
+
+        .contact-form {
+            padding-left: 757px;
+        }
+        .left-image {
+        position: absolute;
+        left: 30;
+        top: 205px;
+        }
+
+        .right-image {
+        position: absolute;
+        left: 1300px;
+        top: 205px;
+        height: 400px;
+        width: 595px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="index.html#major-project">Portfolio</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+	</div>
+    <div class="container">
+        <div class="top-format">
+            <h1>Contact Seth Dijkstra</h1>
+            <p>Email: <a href="mailto:Seth.dijkstra@edu.sait.ca">Seth.dijkstra@edu.sait.ca</a></p>
+            <p>Phone: (403)-498-6309</p><br>
+        </div>
+    </div>
+    
+    <div class="container-contact">
+        <div class="contact-form">
+            <p>Please fill out this contact form, I will get back to you ASAP</p>
+            <form action="https://api.val.town/eval/@sethdijkstra.handleFormExample2">
+                Name: <input type="text" placeholder="Full Name" name="name"><br>
+                Email: <input type="email" placeholder="Email" name="email"><br>
+                Message: <textarea class="msg" placeholder="Message" name="message"></textarea><br>
+                <button>Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <img class="left-image" src="assets/cover-image-of-Places-To-Visit-In-Alberta-In-Summer_17th-jan.webp" alt="Summer in Alberta">
+    <img class="right-image" src="assets/highRiver.jpg" alt="Python logo">
+
+
+    
+    
+</body>
+</html>
+
