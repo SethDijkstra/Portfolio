@@ -128,8 +128,8 @@ nav a:hover {
 .about {
     position: absolute;
     top: 30vh;
-    left: 1vw;
-    padding-right: 50vw;
+    left:25vw;
+    padding-right: 25vw;
     
 }
 .about p, .about h3 {
