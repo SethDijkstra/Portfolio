@@ -30,19 +30,18 @@
             font-size: 25px;
             text-decoration: none;
         }
-        .header li a:hover{
-            color: #ffa5a5;
-        }
+
         html, body {
             height: 100%;
         }
         body {
-            background-image:linear-gradient(to bottom, #000000, #323275);
+            background-image: url("./assets/aboutPicture.jpg");
             color: white;
             font-family: Arial, sans-serif;
             font-size: 18px;
             line-height: 1.5;
             padding: 20px;
+            background-size: cover;
         }
 
         h1 {
@@ -54,9 +53,7 @@
             margin-bottom: 5px;
         }
 
-        a {
-            color: black;
-        }
+        
 
         form {
             margin-top: 20px;
@@ -86,7 +83,7 @@
             text-align: center;
             justify-content: center;
             align-items: center;
-            background-color: rgb(9, 9, 20);
+            background-color: rgba(0, 0, 0, 0.654);
             color: white;
             padding: 10px 25px;
             border: none;
@@ -99,14 +96,7 @@
             background-color: white;
             color: black;
         }
-        body p a {
-            text-decoration: none;
-            color: rgb(245, 245, 245);
-        }
-        body p a:hover {
-            text-decoration: underline;
-            color: darkblue;
-        }
+        
         .container {
         display: flex;
         justify-content: center;
@@ -122,28 +112,79 @@
         .left-image {
         box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2);
         position: absolute;
-        left: 30;
-        top: 235px;
+        left: 40px;
+        top: 200px;
+        height: 405px;
+        width: 645px;
         }
 
         .right-image {
         box-shadow: 0 12px 8px rgba(0, 0, 0, 0.2);
         position: absolute;
         left: 1200px;
-        top: 235px;
+        top: 205px;
         height: 400px;
         width: 675px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 15px;
+            background-color: rgba(0, 0, 0, 0.654);
+            color: #f5f5f7;
+        }
+        nav ul,
+        a {
+            display: flex;
+            gap: 60px;
+            list-style: none;
+            text-decoration: none;
+            font-size: 10px;
+            color: #f5f5f7;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            transition: 0.5s;
+        }
+
+        nav a:hover {
+            transform: scale(110%);
+        }
+        .logo {
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .logo:hover {
+            letter-spacing: 5px;
+        }
+        .top-format a{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            text-transform: none;
+            list-style: initial;
+            text-decoration: initial;
+            letter-spacing: initial;
+            transition: initial;
+            display: inline;
+
         }
     </style>
 </head>
 <body>
-    <div class="header">
-		<ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="index.html#major-project">Portfolio</a></li>
-			<li><a href="contact.html">Contact</a></li>
-		</ul>
-	</div>
+    <header>
+        <nav>
+            <div class="logo"><p>Seth Dijkstra</p></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#major-project">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
     <div class="container">
         <div class="top-format">
             <h1>Contact Seth Dijkstra</h1>
@@ -154,18 +195,18 @@
     
     <div class="container-contact">
         <div class="contact-form">
-            <p>Please fill out this contact form, I will get back to you ASAP</p>
+            <p class="container">Please fill out this contact form, I will get back to you ASAP</p>
             <form action="https://api.val.town/eval/@sethdijkstra.handleFormExample2">
-                Name: <input type="text" placeholder="Full Name" name="name"><br>
-                Email: <input type="email" placeholder="Email" name="email"><br>
-                Message: <textarea class="msg" placeholder="Message" name="message"></textarea><br>
+                <input type="text" placeholder="Full Name" name="name"><br>
+                <input type="email" placeholder="Email" name="email"><br>
+                <textarea class="msg" placeholder="Message" name="message"></textarea><br>
                 <button>Submit</button>
             </form>
         </div>
     </div>
 
-    <img class="left-image" src="assets/cover-image-of-Places-To-Visit-In-Alberta-In-Summer_17th-jan.webp" alt="Summer in Alberta">
-    <img class="right-image" src="assets/highRiver.jpg" alt="Python logo">
+    <img class="left-image" src="assets/frisbeeDark.jpg" alt="frisbee">
+    <img class="right-image" src="assets/mauiDark.jpg" alt="paddleboard">
 
 
     

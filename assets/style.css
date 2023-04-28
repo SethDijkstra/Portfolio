@@ -9,8 +9,7 @@
 header {
     height: 600px;
     width: 100%;
-    background: #9ad6f7;
-    background-image:linear-gradient(to bottom, #9ad6f7, rgb(31, 28, 28));
+    background-image: url("./mountains.jpg");
     background-size: cover;
     background-position: center; 
     z-index: -2;
@@ -59,9 +58,9 @@ nav a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 15vh;
+    height: 25vh;
     font-size: 25px;
-    color: white;
+    color: #1d1d1f;
 }
 
   
@@ -80,12 +79,12 @@ nav a:hover {
     justify-content: center;
     gap: 80px;
     height: 200px;
-    background-color: #1d1d1f;
+    background-color: black;
     color: #f5f5f7;
     text-transform: uppercase;
     font-size: 10px;
     letter-spacing: 3px;
-    box-shadow: 0 12px 40px 10px #1d1d1f;
+    box-shadow: 0 12px 40px 10px black;
     z-index: 1;
     position: relative;
 }
@@ -108,9 +107,8 @@ nav a:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-image: url('./bricks.jpg');
-    background-size: cover;
-    background-position: center;
+    background-color: #868683;
+
 }
 
 .major-project h3 {
@@ -125,28 +123,27 @@ nav a:hover {
     border-radius: 10px;
     border: 3px solid #f5f5f7;
 }
-.about {
-    position: absolute;
-    top: 30vh;
-    left:25vw;
-    padding-right: 25vw;
+.about-box {
+    background-color:rgba(0, 0, 0, 0.654) ;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    color: #f5f5f7;
     
 }
-.about p, .about h3 {
-    font-family: 'Times New Roman', Times, serif;
-    border: 8px solid #1d1d1f;
-    border-bottom: none;
-    color: #f5f5f7;
-}
-.about h3{
+
+.about-box .about h3{
     text-decoration:underline;
 }
-.about p {
+.about-box .about p {
     text-indent: 5%;
     padding-top: 10px;
-    line-height: 40px;
+    line-height: 35px;
     border-top: none;
-    border-bottom: 8px solid #1d1d1f;
+    font-size: small;
 }
 
 .major-project h3:hover {
@@ -165,20 +162,40 @@ nav a:hover {
 
 }
 
+
 .project-content {
-    display:flex;
-    flex-direction: column;
     gap: 30px;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
+    height: 90%;
     width: 30%;
     border: 3px solid #f5f5f7;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.654);
     transition: 0.5s;
     cursor: pointer;
     box-shadow: 0 12px 20px 10px rgba(0, 0, 0, 0.4);
+}
+.project-content h5{
+    display:flex;
+    justify-content: center;
+
+}
+.project-content a, .project-content button{
+    display: flex;
+    padding-top: 71%;
+    justify-content: center;
+}
+
+
+.tropicana {
+    background-size:cover;
+    background-image: url("./tropicana.jpg");
+}
+.lawn {
+    background-size:cover;
+    background-image: url("./lawn.jpg");
+}
+.nike {
+    background-size:cover;
+    background-image: url("./nike.jpg");
 }
 
 .project-content h5 {
@@ -188,7 +205,6 @@ nav a:hover {
 }
 
 .project-content:hover {
-    background-color: rgba(0, 0, 0, 0.654);
     transform: scale(100%);
 }
 
